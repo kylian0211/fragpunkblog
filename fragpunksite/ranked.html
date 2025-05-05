@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranked - Blogpunk</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style pour le chat */
+        .chatbox {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        .chatbox h4 {
+            color: #ff0000;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .chatbox textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #111;
+            color: #fff;
+            border: 1px solid #3ca7d9;
+            resize: none;
+        }
+
+        .chatbox button {
+            padding: 10px 20px;
+            background-color: #00ffcc;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .chatbox button:hover {
+            background-color: #ff007f;
+        }
+
+        /* Style pour le chat chill */
+        .chill-chatbox {
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff007f;
+        }
+
+        .chill-chatbox h4 {
+            color: #ff007f;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Blogpunk</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="armes.html">Armes</a>
+            <a href="maps.html">Maps</a>
+            <a href="personnages.html">Personnages</a>
+            <a href="ranked.html">Ranked</a>
+        </nav>
+    </header>
+
+    <!-- Section des Ranks -->
+    <section>
+        <h2>Les Ranks</h2>
+        <div class="categories">
+            <div class="category">
+                <h3>Bronze</h3>
+                <p>Couleur Cuivre</p>
+
+                <!-- Chat pour la catégorie Bronze -->
+                <div class="chatbox">
+                    <h4>Chat - Bronze</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Argent</h3>
+                <p>Couleur Argent</p>
+
+                <!-- Chat pour la catégorie Argent -->
+                <div class="chatbox">
+                    <h4>Chat - Argent</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Or</h3>
+                <p>Couleur Or</p>
+
+                <!-- Chat pour la catégorie Or -->
+                <div class="chatbox">
+                    <h4>Chat - Or</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Platine</h3>
+                <p>Couleur Bleu Platine</p>
+
+                <!-- Chat pour la catégorie Platine -->
+                <div class="chatbox">
+                    <h4>Chat - Platine</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Diamant</h3>
+                <p>Couleur Bleu Diamant</p>
+
+                <!-- Chat pour la catégorie Diamant -->
+                <div class="chatbox">
+                    <h4>Chat - Diamant</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Maître</h3>
+                <p>Couleur Jaune</p>
+
+                <!-- Chat pour la catégorie Maître -->
+                <div class="chatbox">
+                    <h4>Chat - Maître</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Maître Punk</h3>
+                <p>Couleur Rouge avec des Flammes</p>
+
+                <!-- Chat pour la catégorie Maître Punk -->
+                <div class="chatbox">
+                    <h4>Chat - Maître Punk</h4>
+                    <textarea placeholder="Écrivez un message..."></textarea><br>
+                    <button>Envoyer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Onglet de Chat Chill -->
+        <div class="chill-chatbox">
+            <h4>Chat Chill</h4>
+            <textarea placeholder="Écrivez un message pour chill..."></textarea><br>
+            <button>Envoyer</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Blogpunk. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Fonction simple pour envoyer un message, à personnaliser selon tes besoins
+        document.querySelectorAll("button").forEach(button => {
+            button.addEventListener("click", () => {
+                const message = button.previousElementSibling.value;
+                if (message.trim() !== "") {
+                    alert("Message envoyé : " + message);
+                    button.previousElementSibling.value = ""; // Clear textarea after sending
+                }
+            });
+        });
+    </script>
+</body>
+</html>

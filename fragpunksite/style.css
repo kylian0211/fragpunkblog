@@ -1,0 +1,141 @@
+/* STYLE GÉNÉRAL */
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;  /* Fond sombre général */
+    color: #fff;
+}
+
+/* En-tête */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f39c12;  /* Couleur du titre */
+    text-shadow: 1px 1px 3px #3ca7d9; /* Ombre du texte */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #f39c12;  /* Changement de couleur au survol */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* SECTION PERSONNAGES */
+#personnages {
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.6);  /* Fond sombre transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+#personnages h2 {
+    color: #f39c12;  /* Couleur orange pour les titres */
+    text-shadow: 1px 1px 3px #3ca7d9; /* Ombre du texte */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Catégorie Personnage */
+.category {
+    text-align: center;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.05);  /* Fond transparent blanc */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.03);  /* Effet de zoom au survol */
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category ul li {
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Style pour les autres sections (armes, etc.) */
+section {
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+section h2 {
+    color: #f39c12;
+    text-shadow: 1px 1px 3px #3ca7d9;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Animation pour le défilement des sections */
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation Fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
